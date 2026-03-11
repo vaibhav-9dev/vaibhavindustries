@@ -40,7 +40,7 @@
 </div>
 <h2 class="text-slate-900 dark:text-slate-100 text-lg font-bold leading-tight tracking-tight flex-1 text-center">About Vaibhav Industries</h2>
 <div class="flex w-10 items-center justify-end">
-<button class="flex size-10 items-center justify-center rounded-full hover:bg-primary/10 transition-colors">
+<button onclick="shareHomePage()" class="flex size-10 items-center justify-center rounded-full hover:bg-primary/10 transition-colors">
 <span class="material-symbols-outlined">share</span>
 </button>
 </div>
@@ -52,7 +52,7 @@
 <div class="absolute inset-0 bg-cover bg-center" data-alt="Sun-dried red chillies spread across Guntur fields" style='background-image: linear-gradient(to top, rgba(33, 18, 17, 0.9) 0%, rgba(33, 18, 17, 0.2) 60%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuAtEqaWSaoR5sJBuvDzpflS0B0lhF6imjrImU1a8HUXwE3WgBeJ7Nk6SZQSy0H9Ja1HvTs8P0rWPOf7KaptlUz0bHedC9kBeAhofS2NKj-vVV3LN1fiqPBQkGYlcy8Zym5BC7-zY9M205lK9JT63DCsY5Qo0oimhNnsdF4LvOcU4J2RplxAXlcJMEdzipMEWqzGkDW8Jz31ZYlDfhg3ZKVz88VFo61r80gf9jDs-zpqzzNT_phfTZkFJBdSWOmpwOGD3gPJA0oHRHPZ");'>
 </div>
 <div class="absolute bottom-0 left-0 p-6">
-<span class="bg-primary text-white text-[10px] font-bold uppercase tracking-widest px-2 py-1 rounded mb-2 inline-block">Established 1984</span>
+<span class="bg-primary text-white text-[10px] font-bold uppercase tracking-widest px-2 py-1 rounded mb-2 inline-block">Established 2011</span>
 <h1 class="text-white text-3xl @[480px]:text-4xl font-extrabold leading-tight">Our Heritage</h1>
 </div>
 </div>
@@ -164,4 +164,29 @@
 <p class="text-xs font-medium leading-normal tracking-wide">Contact</p>
 </a>
 </nav>
+<script>
+function shareHomePage() {
+    const pageURL = "https://vaibhav-9dev.github.io/vaibhavindustries/home_page.html"; // e.g., https://www.vaibhavindustries.com/home_page.html
+    const title = "Vaibhav Industries";
+    const text = "Explore the home page of Vaibhav Industries!";
+
+    if (navigator.share) {
+        // Mobile: native share
+        navigator.share({
+            title: title,
+            text: text,
+            url: pageURL
+        }).then(() => {
+            console.log("Home page shared successfully!");
+        }).catch((err) => {
+            console.error("Error sharing:", err);
+        });
+    } else {
+        // Desktop fallback: copy link to clipboard
+        navigator.clipboard.writeText(pageURL)
+            .then(() => alert("Home page link copied to clipboard!"))
+            .catch((err) => alert("Could not copy link. Please copy manually."));
+    }
+}
+</script>
 </body></html>
