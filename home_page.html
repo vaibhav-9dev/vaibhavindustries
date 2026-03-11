@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#e5301f",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#181211",
+                        "neutral-dark": "#261d1c",
+                        "accent-dark": "#382a29"
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 antialiased">
+<!-- Sticky Header -->
+<header class="sticky top-0 z-50 bg-background-light/95 dark:bg-background-dark/95 backdrop-blur-md border-b border-accent-dark/20">
+<div class="max-w-7xl mx-auto flex items-center justify-between px-4 py-3">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-3xl">local_fire_department</span>
+<h1 class="text-xl font-extrabold tracking-tight uppercase">Vaibhav Industries</h1>
+</div>
+<nav class="hidden md:flex items-center gap-8 text-sm font-semibold">
+<a class="text-primary" href="#">Home</a>
+<a class="hover:text-primary transition-colors" href="our_products.html">Products</a>
+<a class="hover:text-primary transition-colors" href="about_us.html">About Us</a>
+
+<a class="hover:text-primary transition-colors" href="our_factory.html">Factory</a>
+<a class="hover:text-primary transition-colors" href="contact_us.html">Contact Us</a>
+
+
+</nav>
+<div class="flex items-center gap-4">
+<button class="flex items-center justify-center p-2 rounded-full bg-neutral-dark hover:bg-accent-dark transition-colors">
+<span class="material-symbols-outlined text-slate-100">search</span>
+</button>
+<a href="contact_us.html">
+<button class="flex items-center justify-center p-2 rounded-full bg-primary text-white hover:bg-red-700 transition-colors">
+<span class="material-symbols-outlined">call</span>
+</button>
+</a>
+</div>
+</div>
+</header>
+<main>
+<!-- Hero Section -->
+<div class="@container">
+<div class="@[480px]:p-6">
+<div class="relative flex min-h-[600px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-xl items-center justify-center p-6 text-center" data-alt="Vibrant heap of high quality Guntur red chilli powder" style='background-image: linear-gradient(rgba(0, 0, 0, 0.4) 0%, rgba(24, 18, 17, 0.9) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuBbOSYew0dAuf41r8sYuazr6wg-RQPa2J-ANYV7J81HS1lf9TJd86sYtZ_eI9RnBN4c75qlVeCBCF7SZxDW_t0Th4cuR6NAguIhos6i95N2j1eaaJ_OXNd0wTpqCgctRmLMXrwfL6fJRYAC7y7LVM0nUei8a3Eu1rkGuXj2TABen6LOWisUaUZ0-IYVbKukJ4IxFYz3BGTb2Tcqwi5VwnkpocnX2YKEKZDkyG04Eed1_m-KFnRJa81DqxuNzpha3l7va0k3IL0cmKPr");'>
+<div class="flex flex-col gap-4 max-w-3xl">
+<span class="text-primary font-bold tracking-[0.2em] uppercase text-sm">Finest Spice from Andhra</span>
+<h2 class="text-white text-5xl font-black leading-tight tracking-tight @[480px]:text-7xl">
+                            Authentic Guntur Red Chilli Powder
+                        </h2>
+<p class="text-slate-300 text-lg font-medium leading-relaxed max-w-2xl mx-auto">
+                            Experience the fiery spice and vibrant natural color of authentic Guntur chillies, sun-dried on traditional platforms and ground to a perfect fine texture.
+                        </p>
+</div>
+<div class="flex flex-wrap gap-4 justify-center mt-4">
+    <a href="our_products.html">
+<button class="flex min-w-[160px] cursor-pointer items-center justify-center rounded-lg h-12 px-8 bg-primary text-white text-base font-bold shadow-lg shadow-primary/20 hover:scale-105 transition-transform">
+                            View Products
+                        </button></a>
+                        <a href="contact_us.html">
+<button class="flex min-w-[160px] cursor-pointer items-center justify-center rounded-lg h-12 px-8 bg-neutral-dark text-white border border-accent-dark text-base font-bold hover:bg-accent-dark transition-colors">
+                            Contact Us
+                        </button>
+                        </a>
+</div>
+</div>
+</div>
+</div>
+<!-- Highlights Section -->
+<section class="py-16 px-4">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="flex flex-col items-center text-center p-6 bg-neutral-dark rounded-xl border border-accent-dark/30">
+<div class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-primary text-3xl">eco</span>
+</div>
+<h3 class="text-xl font-bold mb-2">100% Natural</h3>
+<p class="text-slate-400">Zero additives, no artificial colors, and no preservatives. Pure spice as nature intended.</p>
+</div>
+<div class="flex flex-col items-center text-center p-6 bg-neutral-dark rounded-xl border border-accent-dark/30">
+<div class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-primary text-3xl">agriculture</span>
+</div>
+<h3 class="text-xl font-bold mb-2">Farm Sourced</h3>
+<p class="text-slate-400">Directly sourced from selected farmers in the heart of Guntur, ensuring the heritage is preserved.</p>
+</div>
+<div class="flex flex-col items-center text-center p-6 bg-neutral-dark rounded-xl border border-accent-dark/30">
+<div class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-primary text-3xl">clean_hands</span>
+</div>
+<h3 class="text-xl font-bold mb-2">Hygienic Processing</h3>
+<p class="text-slate-400">Processed in state-of-the-art facilities with minimal human contact to maintain purity.</p>
+</div>
+</div>
+</section>
+<!-- Featured Products -->
+<section class="py-16 px-4 bg-background-light dark:bg-neutral-dark/30">
+<div class="max-w-7xl mx-auto">
+<div class="flex justify-between items-end mb-10">
+<div>
+<h2 class="text-3xl font-black mb-2">Our Signature Collection</h2>
+<div class="h-1 w-20 bg-primary"></div>
+</div>
+<a class="text-primary font-bold flex items-center gap-1 hover:underline" href="our_products.html">
+                        Explore All <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Product 1 -->
+<div class="group bg-neutral-dark rounded-xl overflow-hidden border border-accent-dark/30 hover:border-primary/50 transition-all">
+<div class="aspect-square bg-accent-dark/50 relative overflow-hidden">
+<img alt="Guntur Teja Chilli Powder" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Pack of Guntur Teja variety red chilli powder" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-hR7UTtotbFrSRcXrBLnKqB74ZrGXO-8G98jHUH-b_8DAGQvKR3D5Vr5ZVftZrA8hK-3uLdx6Mu2VBqXJJnII-mzujzu5dLzX8BfcvTrP2EkNKPjjHVGVL6g4sQ76_ttfrlhYa9jww8svlV68E_fzC69sTi_icPv5W8qoWVta_KnJKUAVEKOX4As2qlEyW9tqChJo7-rWJ-gOq5RskieqaX6zQevzUenMV604hGCRvWC7auMdi-3zuIWiRclS13MGO-QQ6KEEK2k7"/>
+<div class="absolute top-2 left-2 bg-primary text-white text-[10px] font-bold px-2 py-1 rounded">BEST SELLER</div>
+</div>
+<div class="p-4">
+<h4 class="font-bold text-lg mb-1">Teja Special (Extra Hot)</h4>
+<p class="text-slate-400 text-sm mb-4">High capsaicin content for extreme heat lovers.</p>
+<div class="flex items-center justify-between">
+<span class="text-xl font-bold text-primary">₹249.00</span>
+<button class="p-2 rounded-lg bg-accent-dark hover:bg-primary text-white transition-colors">
+<span class="material-symbols-outlined text-sm">add_shopping_cart</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product 2 -->
+<div class="group bg-neutral-dark rounded-xl overflow-hidden border border-accent-dark/30 hover:border-primary/50 transition-all">
+<div class="aspect-square bg-accent-dark/50 relative overflow-hidden">
+<img alt="Byadgi Mild Chilli Powder" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Guntur Byadgi style mild red chilli powder" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJ3xW4jlMu8XsZQnKYI8XMqnCFPdxlaicvgptBXVdAgiHvJSO41zlyt4g227pyYosyUaKvj3pK72Jalz8Q-w5e6eQOalW4zgYhIoP2QNIZjjo7swjr4A3EygqiYQ0fpRuK6fGnKC_ZfDmq2h8BhstoTI8QecMrHktWoiOL_iL6kkAlGOptFiB4N2TafeAJFXtyMO2qUqOeis1qtjSVX1q04H_SAite-hTp0N3XzxbR0kz4NF7mCLCeilab1_v1LsFFwIVaMs2M2SWk"/>
+</div>
+<div class="p-4">
+<h4 class="font-bold text-lg mb-1">Guntur Sannam (Medium)</h4>
+<p class="text-slate-400 text-sm mb-4">The classic balanced spice for daily cooking.</p>
+<div class="flex items-center justify-between">
+<span class="text-xl font-bold text-primary">₹219.00</span>
+<button class="p-2 rounded-lg bg-accent-dark hover:bg-primary text-white transition-colors">
+<span class="material-symbols-outlined text-sm">add_shopping_cart</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product 3 -->
+<div class="group bg-neutral-dark rounded-xl overflow-hidden border border-accent-dark/30 hover:border-primary/50 transition-all">
+<div class="aspect-square bg-accent-dark/50 relative overflow-hidden">
+<img alt="Kashmiri Red Powder" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Vibrant red Kashmiri style chilli powder" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWzxadC4Qfnz2_rBr5TbHCfbjVRTxepXmUlO8GXwoDqghgMYDifcFRrWEc2gH1P1nfZxTV3m4KJE4FwdpcfVZR1yjXADgU3kJUAX74W6CowhWbzjzvRXFeUJJHVwbBnPzp4qK5gApR_Zr1Gnm0XSdbXAbFVdX7imjSJP-vM8LDui3cSqNBYHEmWMvRKIiyFaCYcO-UPpjgZ9JVPdMIsM90Cp8AaleGJPCbqYMOTVrpZ_nwcCKn-FJ4qP3uRgW6hX3t04rRPLk3DOsc"/>
+</div>
+<div class="p-4">
+<h4 class="font-bold text-lg mb-1">Premium Grade A+</h4>
+<p class="text-slate-400 text-sm mb-4">Hand-picked premium chillies for rich color.</p>
+<div class="flex items-center justify-between">
+<span class="text-xl font-bold text-primary">₹299.00</span>
+<button class="p-2 rounded-lg bg-accent-dark hover:bg-primary text-white transition-colors">
+<span class="material-symbols-outlined text-sm">add_shopping_cart</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product 4 -->
+<div class="group bg-neutral-dark rounded-xl overflow-hidden border border-accent-dark/30 hover:border-primary/50 transition-all">
+<div class="aspect-square bg-accent-dark/50 relative overflow-hidden">
+<img alt="Whole Chillies" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Whole dried red Guntur chillies" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGFDt00I77T9dgtMjWofaAkOmAGhhnYa9k4O2RJG_am8syJzdEe3zbd4wR86-wrcgG0r9Atuo6BHr-_hOeuEzIM7hP35jQze_Eip7Th0fKTsvgywo8NBoAgBbDa5_DC0ctWVSlLZiQ3uN71Ma9pMxxvu_eUkFPH4oudEuirP8xySM0sLa4wQ_JdFjtDbeL8YyT-vG-KFFNNYibt0idoDzMLSPZxRszdSV8lEP9xw7O6PUjeapqPXrUYehkrQAjNKCRG2XUuKi_djma"/>
+</div>
+<div class="p-4">
+<h4 class="font-bold text-lg mb-1">Whole Dried Chillies</h4>
+<p class="text-slate-400 text-sm mb-4">Sun-dried whole chillies for authentic tadkas.</p>
+<div class="flex items-center justify-between">
+<span class="text-xl font-bold text-primary">₹189.00</span>
+<button class="p-2 rounded-lg bg-accent-dark hover:bg-primary text-white transition-colors">
+<span class="material-symbols-outlined text-sm">add_shopping_cart</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Legacy Section -->
+<section class="py-20 px-4 overflow-hidden">
+<div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12">
+<div class="flex-1 space-y-6">
+<h2 class="text-4xl font-black leading-tight">Our Legacy: Rooted in the Soil of Guntur</h2>
+<p class="text-slate-400 leading-relaxed text-lg">
+                        For over three generations, we have been part of Guntur's world-renowned chilli spice trade. Our process begins in the fertile black soil of the Krishna river basin, where local farmers cultivate the most pungent varieties of chillies.
+                    </p>
+<p class="text-slate-400 leading-relaxed text-lg">
+                        We don't just sell spice; we sell a tradition. Each batch is carefully inspected by elders who can tell the quality by the aroma alone. By choosing Guntur Heritage, you are supporting sustainable farming and authentic Indian culinary heritage.
+                    </p>
+<div class="pt-4">
+<button class="px-8 py-3 bg-primary rounded-lg font-bold hover:bg-red-700 transition-colors inline-flex items-center gap-2">
+                            Our Full Story <span class="material-symbols-outlined">menu_book</span>
+</button>
+</div>
+</div>
+<div class="flex-1 w-full relative">
+<div class="absolute -inset-4 bg-primary/20 blur-3xl rounded-full"></div>
+<div class="relative grid grid-cols-2 gap-4">
+<div class="space-y-4">
+<div class="rounded-2xl overflow-hidden h-48">
+<img alt="Farming" class="w-full h-full object-cover" data-alt="Traditional chilli farmer in a Guntur field" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDD8_92GvANUHoRhqwWfb2V0XC9mv6WW7BNS3HpaByil9tRaEvpYfXLDAlFhklZ4r41wW3TSeUHldddt050QiuF2M_p7eQFF50hDFD6_D2tx0xsMp2LJ0p75pLrhDZoVYH49FWI_5u4eT_lmdmh9HavqxpBD4c2rPt01J1Qadm6IwoKEUq9KJMMyTuDnCYjE7mRm5HCt_smQEMbdXonzgS1aJ_8H8N-ntJ8zDpsHqBHDgRdUpOk1TpxwN6MpLqmimoZS8ewU54tMpTZ"/>
+</div>
+<div class="rounded-2xl overflow-hidden h-64">
+<img alt="Spice heap" class="w-full h-full object-cover" data-alt="Sun-dried red chillies being sorted" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4dm5IOyy3wBuGoRbz6NkmpveJE0nQSUxHsCD4VAnWuvmV7EH49cTlfINcG-RlSn5692QV9VQ_iSPiM-cchdlNCzXU0Gf-JOHy2Tq1zRBOPBZVL2vDSva5EX7XaKN2cOhWHj13Su_HSPjJf0tLJrKjrTqOeGu696hZSdwSKxplfgfC-2xbDI0hfFtnPOBlGvGgHpf3e8gdgNTZEDVoc8-SWkgc0jCy0GbOFYX-BaSZoj-qP7ZGLyMf4MUxeLNUY45bL1uWFFwO63r8"/>
+</div>
+</div>
+<div class="space-y-4 pt-12">
+<div class="rounded-2xl overflow-hidden h-64">
+<img alt="Kitchen" class="w-full h-full object-cover" data-alt="A chef using red chilli powder in traditional cooking" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQnURniU2nIz07kXffPM5cQNBLY6SAFezOrswfmCkvRJrW1KAqP-HT11ZYn9N9JknfCz50ZVA7cXtt20WoRwtqZxe-95jONudh1NqB8UdtPW0rYH-DAy4zioKbAWv2X8rYneOBnJY_yxnlzbhPzOKtpg9gB2DfMTiJLtQFaDaLRaYurRfpoSjiMBOuIIU3K-EAVuOYDKdrqAOvj64FcamSNkAvLu2b8b5S07Ce2804n5Bn_1HLsVIDiBSrJ6HnWJN1ZiccmoFgElge"/>
+</div>
+<div class="rounded-2xl overflow-hidden h-48">
+<div class="w-full h-full bg-primary flex items-center justify-center p-6 text-center italic font-bold">
+                                    "Bringing the true heat of Guntur to every kitchen worldwide."
+                                </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Newsletter / CTA Section -->
+<section class="py-16 px-4">
+<div class="max-w-5xl mx-auto bg-gradient-to-r from-primary to-red-800 rounded-3xl p-8 md:p-12 text-center text-white">
+<h2 class="text-3xl md:text-4xl font-black mb-4">Experience the Authenticity</h2>
+<p class="text-white/80 text-lg mb-8 max-w-2xl mx-auto">Join over 10,000 households that trust Guntur Heritage for their daily culinary needs.</p>
+<div class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+<input class="flex-1 bg-white/10 border-white/20 rounded-lg px-4 py-3 placeholder:text-white/50 text-white focus:ring-2 focus:ring-white/50 outline-none" placeholder="Enter your email for spice tips" type="email"/>
+<button class="bg-white text-primary font-bold px-8 py-3 rounded-lg hover:bg-slate-100 transition-colors">Subscribe</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-neutral-dark border-t border-accent-dark pt-16 pb-8 px-4">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+<div class="space-y-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-3xl">local_fire_department</span>
+<h2 class="text-xl font-extrabold tracking-tight uppercase">Vaibhav Industries</h2>
+</div>
+<p class="text-slate-400 text-sm leading-relaxed">
+                    Preserving the authentic taste of Andhra's famous chillies. Farm-sourced, sun-dried, and pure.
+                </p>
+<div class="flex gap-4">
+<a class="text-slate-400 hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">social_leaderboard</span></a>
+<a class="text-slate-400 hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">share_reviews</span></a>
+<a class="text-slate-400 hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">public</span></a>
+</div>
+</div>
+<div>
+<h4 class="font-bold mb-6 uppercase text-xs tracking-widest text-primary">Quick Links</h4>
+<ul class="space-y-3 text-slate-400 text-sm">
+<li><a class="hover:text-white" href="#">Shop All Chillies</a></li>
+<li><a class="hover:text-white" href="#">Wholesale Inquiry</a></li>
+<li><a class="hover:text-white" href="#">Shipping Policy</a></li>
+<li><a class="hover:text-white" href="#">Privacy Policy</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-6 uppercase text-xs tracking-widest text-primary">Contact Us</h4>
+<ul class="space-y-3 text-slate-400 text-sm">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-lg">mail</span> vaibhavexim@yahoo.com</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-lg">call</span> +91 9849275961</li>
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-lg">location_on</span> Sampath Nagar, Guntur, Andhra Pradesh, India</li>
+</ul>
+</div>
+<div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto border-t border-accent-dark/50 pt-8 text-center text-slate-500 text-xs">
+            © 2026 Guntur Heritage Pvt Ltd. All rights reserved.
+        </div>
+</footer>
+<!-- Bottom Navigation (Mobile Only) -->
+<div class="fixed bottom-0 left-0 right-0 z-50 md:hidden bg-background-dark/80 backdrop-blur-lg border-t border-accent-dark flex justify-around items-center px-4 py-3 pb-6">
+<a class="flex flex-col items-center gap-1 text-primary" href="home_page.html">
+<span class="material-symbols-outlined">home</span>
+<span class="text-[10px] font-bold uppercase">Home</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-400" href="our_products.html">
+<span class="material-symbols-outlined">shopping_basket</span>
+<span class="text-[10px] font-bold uppercase">Products</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-400" href="our_factory.html">
+<span class="material-symbols-outlined">factory</span>
+<span class="text-[10px] font-bold uppercase">Factory</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-400" href="contact_us.html">
+<span class="material-symbols-outlined">person</span>
+<span class="text-[10px] font-bold uppercase">Contact</span>
+</a>
+</div>
+</body></html>

@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Vaibhav Industries Products | Premium Spices</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#e5301f",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#211211",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen flex flex-col">
+<!-- Header / Navigation Area -->
+<header class="sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-primary/10">
+<div class="flex items-center p-4 justify-between max-w-7xl mx-auto w-full">
+<div class="text-primary flex size-12 shrink-0 items-center justify-center cursor-pointer">
+    <a href="home_page.html">
+<span class="material-symbols-outlined text-3xl">arrow_back</span>
+</a>
+</div>
+<div class="flex-1 px-4 text-center sm:text-left">
+<h1 class="text-slate-900 dark:text-slate-100 text-xl font-extrabold leading-tight tracking-tight">Vaibhav Industries</h1>
+<p class="text-xs text-primary font-medium uppercase tracking-widest">Premium Quality Red Chillies Powder</p>
+</div>
+<div class="flex items-center gap-2">
+<button class="flex size-12 items-center justify-center rounded-full hover:bg-primary/10 transition-colors">
+<span class="material-symbols-outlined text-slate-900 dark:text-slate-100">search</span>
+</button>
+<button class="flex size-12 items-center justify-center rounded-full bg-primary text-white shadow-lg shadow-primary/20">
+<span class="material-symbols-outlined">shopping_cart</span>
+</button>
+</div>
+</div>
+</header>
+<main class="flex-1 w-full max-w-7xl mx-auto px-4 py-6">
+<!-- Search and Filters -->
+<div class="mb-8 space-y-4">
+<div class="relative w-full">
+<div class="absolute inset-y-0 left-0 flex items-center pl-4 pointer-events-none text-primary/60">
+<span class="material-symbols-outlined">search</span>
+</div>
+<input id="searchInput"
+class="w-full h-14 pl-12 pr-4 rounded-xl border-none bg-primary/5"
+placeholder="Search chilli varieties..."
+type="text"/></div>
+<div class="flex gap-3 overflow-x-auto pb-2 no-scrollbar">
+    <button class="filter-btn flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-primary text-white px-4 text-sm font-semibold shadow-md" data-filter-type="all" data-filter-value="all">
+        <span class="material-symbols-outlined text-[20px]">tune</span>
+        All Products
+    </button>
+    <button class="filter-btn flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-primary/5 dark:bg-primary/10 border border-primary/20 px-4 text-slate-700 dark:text-slate-200 text-sm font-medium hover:bg-primary/20 transition-all" data-filter-type="heat" data-filter-value="very hot">
+        Spice Level: Very Hot
+    </button>
+    <button class="filter-btn flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-primary/5 dark:bg-primary/10 border border-primary/20 px-4 text-slate-700 dark:text-slate-200 text-sm font-medium hover:bg-primary/20 transition-all" data-filter-type="heat" data-filter-value="medium">
+        Spice Level: Medium
+    </button>
+    <button class="filter-btn flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-primary/5 dark:bg-primary/10 border border-primary/20 px-4 text-slate-700 dark:text-slate-200 text-sm font-medium hover:bg-primary/20 transition-all" data-filter-type="heat" data-filter-value="mild">
+        Spice Level: Mild
+    </button>
+    <button class="filter-btn flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-primary/5 dark:bg-primary/10 border border-primary/20 px-4 text-slate-700 dark:text-slate-200 text-sm font-medium hover:bg-primary/20 transition-all" data-filter-type="packaging" data-filter-value="10kg">Packaging: 10kg</button>
+    <button class="filter-btn flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-primary/5 dark:bg-primary/10 border border-primary/20 px-4 text-slate-700 dark:text-slate-200 text-sm font-medium hover:bg-primary/20 transition-all" data-filter-type="packaging" data-filter-value="25kg">Packaging: 25kg</button>
+    <button class="filter-btn flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-primary/5 dark:bg-primary/10 border border-primary/20 px-4 text-slate-700 dark:text-slate-200 text-sm font-medium hover:bg-primary/20 transition-all" data-filter-type="packaging" data-filter-value="50kg">Packaging: 50kg</button>
+</div></div>
+<h2 class="text-2xl font-bold mb-6 text-slate-900 dark:text-slate-100 flex items-center gap-2">
+<span class="w-2 h-8 bg-primary rounded-full"></span>
+            Vaibhav Industries Collection
+        </h2>
+<!-- Product Grid -->
+ <div id="productGrid"
+class="grid gap-6"
+style="grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));">
+<!-- Product Card 1 -->
+<div class="group flex flex-col bg-white dark:bg-primary/5 rounded-xl overflow-hidden border border-primary/10 hover:border-primary/40 transition-all duration-300 shadow-sm hover:shadow-xl hover:shadow-primary/5"data-name="guntur teja"
+data-heat="very hot" data-packaging="10kg,25kg,50kg">
+<div class="relative aspect-square overflow-hidden bg-slate-200 dark:bg-slate-800">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Vibrant Guntur Teja Red Chilli Powder" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbCx-zPlggd49-UlQ_uASdSSoDRJzwtrBSFP1jpyxI5HHM6z8XyhMEsZC4rKKGlgXQHrSJRdCN2ICuviEDMmgQqJDIU69oWu7bpMIp6pq2oKi1tkUOt6tOgWy8jwBQrw_gLDyZzpurmoaxw8HlfYMz-_oBZr1ey984WkISJrsP22o65gVBgRIOKCfswtMteS6XNKH5MFfw33g-xLxCSN0aV69F5ivWVlMsWpr3yb6mI9NPtwzGB9GoT2-saiQrxFB74QxteYmJnbK0"/>
+<div class="absolute top-3 left-3 bg-primary text-white text-[10px] font-bold px-2 py-1 rounded uppercase tracking-wider">Most Popular</div>
+<div class="absolute bottom-3 right-3 bg-black/60 backdrop-blur-md text-white text-[10px] px-2 py-1 rounded flex items-center gap-1">
+<span class="material-symbols-outlined text-xs text-yellow-500 fill-1">grade</span>
+                        4.9 (120 Reviews)
+                    </div>
+</div>
+<div class="p-5 flex flex-col flex-1">
+<div class="flex justify-between items-start mb-2">
+<h3 class="text-lg font-bold text-slate-900 dark:text-slate-100 group-hover:text-primary transition-colors">Guntur Teja (S17)</h3>
+<span class="text-primary text-xs font-bold px-2 py-1 bg-primary/10 rounded">Very Hot</span>
+</div>
+<p class="text-sm text-slate-500 dark:text-slate-400 line-clamp-2 mb-4">World-renowned for its intense heat and deep red color. High SHU levels perfect for spice processing.</p>
+<div class="mb-5">
+<p class="text-[10px] font-bold uppercase text-slate-400 mb-2 tracking-widest">Available Sizes (KG)</p>
+<div class="flex gap-2">
+<span class="flex-1 text-center py-2 text-xs font-semibold rounded-lg border border-primary/20 bg-primary/5 text-slate-700 dark:text-slate-300">10kg</span>
+<span class="flex-1 text-center py-2 text-xs font-semibold rounded-lg border border-primary/20 bg-primary/5 text-slate-700 dark:text-slate-300">25kg</span>
+<span class="flex-1 text-center py-2 text-xs font-semibold rounded-lg border border-primary/20 bg-primary/5 text-slate-700 dark:text-slate-300">50kg</span>
+</div>
+</div>
+<button onclick="openEnquiry('Guntur Teja (S17)')" class="mt-auto w-full bg-primary hover:bg-primary/90 text-white font-bold py-3 rounded-lg flex items-center justify-center gap-2 transition-transform active:scale-95">
+<span class="material-symbols-outlined text-sm">mail</span>
+                        Enquire Now
+                    </button>
+</div>
+</div>
+<!-- Product Card 2 -->
+<div class="group flex flex-col bg-white dark:bg-primary/5 rounded-xl overflow-hidden border border-primary/10 hover:border-primary/40 transition-all duration-300 shadow-sm hover:shadow-xl hover:shadow-primary/5"data-name="byadagi"
+data-heat="mild" data-packaging="10kg,50kg">
+<div class="relative aspect-square overflow-hidden bg-slate-200 dark:bg-slate-800">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Premium Byadagi Chilli Powder with deep red color" src="https://lh3.googleusercontent.com/aida-public/AB6AXuASXf270VmSfQKl5t3spFroWBwypdUQU4SrGgRUXBS55Kon6z70TKpRBzTlVp50NPdagYait9rOcvdkFS8zaby7gec3zyFhvHgV0JYs4DGL2GME2XsElGp6hduZZDb92TuYKyytdmcLDoJWnFee6ZxGnmoCsTQbs0361fNPDe--dKwtXZQS945Ib9Er_BvKSVeSB_aUjdWu9G2Ubt5InPZ6XKSFmFn4SX7YjsF5NjO8rMxKOFGm1T7cB6dd341zYwv_NO1wkSoOtZPb"/>
+<div class="absolute bottom-3 right-3 bg-black/60 backdrop-blur-md text-white text-[10px] px-2 py-1 rounded flex items-center gap-1">
+<span class="material-symbols-outlined text-xs text-yellow-500 fill-1">grade</span>
+                        4.7 (85 Reviews)
+                    </div>
+</div>
+<div class="p-5 flex flex-col flex-1">
+<div class="flex justify-between items-start mb-2">
+<h3 class="text-lg font-bold text-slate-900 dark:text-slate-100 group-hover:text-primary transition-colors">Byadagi Premium</h3>
+<span class="text-orange-500 text-xs font-bold px-2 py-1 bg-orange-500/10 rounded">Mild Heat</span>
+</div>
+<p class="text-sm text-slate-500 dark:text-slate-400 line-clamp-2 mb-4">Famous for its vibrant color and unique wrinkled texture. Minimal heat but maximum flavor profile.</p>
+<div class="mb-5">
+<p class="text-[10px] font-bold uppercase text-slate-400 mb-2 tracking-widest">Available Sizes (KG)</p>
+<div class="flex gap-2">
+<span class="flex-1 text-center py-2 text-xs font-semibold rounded-lg border border-primary/20 bg-primary/5 text-slate-700 dark:text-slate-300">10kg</span>
+<!--<span class="flex-1 text-center py-2 text-xs font-semibold rounded-lg border border-primary/20 bg-primary/5 text-slate-700 dark:text-slate-300">25kg</span>-->
+<span class="flex-1 text-center py-2 text-xs font-semibold rounded-lg border border-primary/20 bg-primary/5 text-slate-700 dark:text-slate-300">50kg</span>
+</div>
+</div>
+<button onclick="openEnquiry('Byadagi Premium')" class="mt-auto w-full bg-primary hover:bg-primary/90 text-white font-bold py-3 rounded-lg flex items-center justify-center gap-2 transition-transform active:scale-95">
+<span class="material-symbols-outlined text-sm">mail</span>
+                        Enquire Now
+                    </button>
+</div>
+</div>
+<!-- Product Card 3 -->
+<div class="group flex flex-col bg-white dark:bg-primary/5 rounded-xl overflow-hidden border border-primary/10 hover:border-primary/40 transition-all duration-300 shadow-sm hover:shadow-xl hover:shadow-primary/5"data-name="sannam s4"
+data-heat="medium" data-packaging="10kg,25kg,50kg">
+<div class="relative aspect-square overflow-hidden bg-slate-200 dark:bg-slate-800">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Sannam S4 Chilli Variety texture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLv47hnlxEenR8HxH9q0rrOJip0nO-JsyPclberISwkTIKBBOrkxEf-AABFc8x2ybqxobNn1I4uLDdj6z7_57rglvYCdp-ynxK2gWTS0INsb1rIazuAxUkV2ksXBOKziZw-rWW1qVUOd8IHDwWnEgB7zMhVjJ-nc5pTf06xFPXAZ9mV-QAC8pd6V6LIVOGDYBnqYjMH688mSMDBIiiROPk3h-Ll4RrY4qrc6wUjciHeccKqCOCyRH2u6CuLTL8-zTPsm02dcbtPLyH"/>
+<div class="absolute top-3 left-3 bg-primary text-white text-[10px] font-bold px-2 py-1 rounded uppercase tracking-wider">High Export</div>
+<div class="absolute bottom-3 right-3 bg-black/60 backdrop-blur-md text-white text-[10px] px-2 py-1 rounded flex items-center gap-1">
+<span class="material-symbols-outlined text-xs text-yellow-500 fill-1">grade</span>
+                        4.8 (210 Reviews)
+                    </div>
+</div>
+<div class="p-5 flex flex-col flex-1">
+<div class="flex justify-between items-start mb-2">
+<h3 class="text-lg font-bold text-slate-900 dark:text-slate-100 group-hover:text-primary transition-colors">Sannam S4 Variety</h3>
+<span class="text-red-600 text-xs font-bold px-2 py-1 bg-red-600/10 rounded">Medium-Hot</span>
+</div>
+<p class="text-sm text-slate-500 dark:text-slate-400 line-clamp-2 mb-4">The standard for Guntur exports. Versatile, dependable, and balanced heat profile for industrial use.</p>
+<div class="mb-5">
+<p class="text-[10px] font-bold uppercase text-slate-400 mb-2 tracking-widest">Available Sizes (KG)</p>
+<div class="flex gap-2">
+<span class="flex-1 text-center py-2 text-xs font-semibold rounded-lg border border-primary/20 bg-primary/5 text-slate-700 dark:text-slate-300">10kg</span>
+<span class="flex-1 text-center py-2 text-xs font-semibold rounded-lg border border-primary/20 bg-primary/5 text-slate-700 dark:text-slate-300">25kg</span>
+<span class="flex-1 text-center py-2 text-xs font-semibold rounded-lg border border-primary/20 bg-primary/5 text-slate-700 dark:text-slate-300">50kg</span>
+</div>
+</div>
+<button onclick="openEnquiry('Sannam S4 Variety')" class="mt-auto w-full bg-primary hover:bg-primary/90 text-white font-bold py-3 rounded-lg flex items-center justify-center gap-2 transition-transform active:scale-95">
+<span class="material-symbols-outlined text-sm">mail</span>
+                        Enquire Now
+                    </button>
+</div>
+</div>
+<!-- Product Card 4 -->
+<div class="group flex flex-col bg-white dark:bg-primary/5 rounded-xl overflow-hidden border border-primary/10 hover:border-primary/40 transition-all duration-300 shadow-sm hover:shadow-xl hover:shadow-primary/5"data-name="double resham"
+data-heat="very hot" data-packaging="10kg,25kg,50kg">
+<div class="relative aspect-square overflow-hidden bg-slate-200 dark:bg-slate-800">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Double Resham Red Chilli Flakes" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfP33VUu1PT3VKJ1vtTRWHIzopq9LqQD8eGahJimCZ8cGHi4P_89jHBlVnoY5CU-kRPcgZ9eIyMSxEPTXpHBTLfx8JM2ZvjiqGWtDo9v5BJvrlfU056r3Xn9eScvbcC-qP5nJCu6C6QWh6SUsaJ22VuHiYWrkcxLd7i2DMrtxeFBibiiiW1Au1gf2ZgA_i_4MvAHnCXFjKa6wCFazJDzFgb7bvIKNHhkGa7KlboRYXeWczaIGy8qlbIxmZ4EDl2GhyCSbw8z2ztt0_"/>
+<div class="absolute bottom-3 right-3 bg-black/60 backdrop-blur-md text-white text-[10px] px-2 py-1 rounded flex items-center gap-1">
+<span class="material-symbols-outlined text-xs text-yellow-500 fill-1">grade</span>
+                        4.6 (42 Reviews)
+                    </div>
+</div>
+<div class="p-5 flex flex-col flex-1">
+<div class="flex justify-between items-start mb-2">
+<h3 class="text-lg font-bold text-slate-900 dark:text-slate-100 group-hover:text-primary transition-colors">Double Resham</h3>
+<span class="text-primary text-xs font-bold px-2 py-1 bg-primary/10 rounded">Very Hot</span>
+</div>
+<p class="text-sm text-slate-500 dark:text-slate-400 line-clamp-2 mb-4">Deep crimson color with a pungent aroma. Ideal for making premium spice blends and oils.</p>
+<div class="mb-5">
+<p class="text-[10px] font-bold uppercase text-slate-400 mb-2 tracking-widest">Available Sizes (KG)</p>
+<div class="flex gap-2">
+<span class="flex-1 text-center py-2 text-xs font-semibold rounded-lg border border-primary/20 bg-primary/5 text-slate-700 dark:text-slate-300">10kg</span>
+<span class="flex-1 text-center py-2 text-xs font-semibold rounded-lg border border-primary/20 bg-primary/5 text-slate-700 dark:text-slate-300">25kg</span>
+<span class="flex-1 text-center py-2 text-xs font-semibold rounded-lg border border-primary/20 bg-primary/5 text-slate-700 dark:text-slate-300">50kg</span>
+</div>
+</div>
+
+<button onclick="openEnquiry('Double Resham')" class="mt-auto w-full bg-primary hover:bg-primary/90 text-white font-bold py-3 rounded-lg flex items-center justify-center gap-2 transition-transform active:scale-95">
+<span class="material-symbols-outlined text-sm">mail</span>
+                        Enquire Now
+                    </button>
+                    </div>
+                </div>
+</div>
+</div>
+</main>
+<!-- Bottom Navigation Bar -->
+<footer class="sticky bottom-0 z-50 w-full border-t border-primary/10 bg-background-light dark:bg-background-dark/95 backdrop-blur-lg safe-area-inset-bottom">
+<div class="flex gap-2 px-4 pb-6 pt-2 max-w-lg mx-auto">
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-slate-500 dark:text-slate-400 hover:text-primary" href="home_page.html">
+<span class="material-symbols-outlined text-[24px]">home</span>
+<p class="text-[10px] font-semibold leading-normal uppercase tracking-tighter">Home</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-slate-500 dark:text-slate-400 hover:text-primary" href="our_factory.html">
+<span class="material-symbols-outlined text-[24px]">factory</span>
+<p class="text-[10px] font-semibold leading-normal uppercase tracking-tighter">Factory</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-slate-500 dark:text-slate-400 hover:text-primary" href="contact_us.html">
+<span class="material-symbols-outlined text-[24px]">person</span>
+<p class="text-[10px] font-semibold leading-normal uppercase tracking-tighter">Contact Us</p>
+</a>
+</div>
+</footer>
+<!--Enquiry Pop-up-->
+
+<div id="enquiryPopup" class="fixed inset-0 bg-black/60 hidden items-center justify-center z-50">
+
+  <div class="bg-white dark:bg-slate-800 w-[90%] max-w-md rounded-xl p-6 relative">
+
+    <a href="our_products.html"><button onclick="closeEnquiry()" 
+      class="absolute top-3 right-3 text-slate-400 hover:text-red-500">
+      ✕
+    </button>
+    </a>
+
+    <h3 class="text-xl font-bold mb-4">Product Enquiry</h3>
+
+    <form id="enquiryForm" class="space-y-3">
+
+      <input type="hidden" name="product" id="productName">
+
+      <div>
+        <label class="text-sm">Name</label>
+        <input type="text" name="name" required
+        class="w-full p-2 rounded-lg border" style="color: black;">
+      </div>
+
+      <div>
+        <label class="text-sm">Email</label>
+        <input type="email" name="email" required
+        class="w-full p-2 rounded-lg border" style="color: black;">
+      </div>
+
+      <div>
+        <label class="text-sm">Phone</label>
+        <input type="tel" name="phone"
+        class="w-full p-2 rounded-lg border" style="color: black;">
+      </div>
+
+      <div>
+        <label class="text-sm">Quantity (KG)</label>
+        <input type="text" name="quantity"
+        class="w-full p-2 rounded-lg border" style="color: black;">
+      </div>
+
+      <div>
+        <label class="text-sm">Message</label>
+        <textarea name="message" rows="3"
+        class="w-full p-2 rounded-lg border" style="color: black;"></textarea>
+      </div>
+
+      <button type="submit"
+      class="w-full bg-primary text-white py-3 rounded-lg font-bold">
+        Send Enquiry
+      </button>
+
+    </form>
+
+  </div>
+</div>
+<!--Email sucess popup-->
+<div id="emailSuccessPopup" class="fixed inset-0 hidden items-center justify-center bg-black/50 z-50">
+
+  <div class="bg-white dark:bg-slate-800 rounded-xl p-6 w-[90%] max-w-sm text-center shadow-xl">
+
+    <span class="material-symbols-outlined text-green-500 text-5xl mb-2">
+      check_circle
+    </span>
+
+    <h3 class="text-xl font-bold mb-2">Enquiry Sent!</h3>
+
+    <p class="text-slate-400 mb-4">
+      Thank you. We will contact you soon.
+    </p>
+
+    <button onclick="closeSuccessPopup()"
+    class="bg-primary text-white px-6 py-2 rounded-lg hover:bg-primary/90">
+      OK
+    </button>
+
+  </div>
+
+</div>
+<!--search script-->
+<script>
+
+const searchInput = document.getElementById("searchInput");
+const filterButtons = document.querySelectorAll(".filter-btn");
+const productGrid = document.getElementById("productGrid");
+const products = Array.from(productGrid.children);
+
+let activeFilters = {
+  heat: "all",
+  packaging: "all"
+};
+
+function filterProducts(){
+
+  const searchValue = searchInput.value.toLowerCase();
+
+  const matches = [];
+  const nonMatches = [];
+
+  products.forEach(product => {
+
+    const name = product.dataset.name.toLowerCase();
+    const heat = product.dataset.heat.toLowerCase();
+    const packaging = product.dataset.packaging.toLowerCase();
+
+    const searchMatch = name.includes(searchValue);
+
+    const heatMatch =
+      activeFilters.heat === "all" ||
+      heat === activeFilters.heat;
+
+    const packagingMatch =
+      activeFilters.packaging === "all" ||
+      packaging.includes(activeFilters.packaging);
+
+    if(searchMatch && heatMatch && packagingMatch){
+        matches.push(product);
+    } else {
+        nonMatches.push(product);
+    }
+
+  });
+
+  // clear grid
+  productGrid.innerHTML = "";
+
+  // show matches first
+  matches.forEach(p=>{
+      p.style.visibility = "visible";
+      productGrid.appendChild(p);
+  });
+
+  // keep non matches but hidden (size preserved)
+  nonMatches.forEach(p=>{
+      p.style.visibility = "hidden";
+      productGrid.appendChild(p);
+  });
+
+}
+
+searchInput.addEventListener("keyup", filterProducts);
+
+filterButtons.forEach(btn=>{
+  btn.addEventListener("click",()=>{
+
+    const type = btn.dataset.filterType;
+    const value = btn.dataset.filterValue;
+
+    if(type==="all"){
+        activeFilters = {heat:"all", packaging:"all"};
+    } else {
+        activeFilters[type] = value;
+    }
+
+    filterProducts();
+
+  });
+});
+
+</script></body>
+<!--email-->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<script>
+emailjs.init("cBedC9FGezfZq_EzB");
+
+document.getElementById("enquiryForm").addEventListener("submit", function(e){
+
+  e.preventDefault();
+
+  const form = this;
+
+  emailjs.sendForm(
+    "service_i0y5rxt",
+    "template_tluoezi",
+    form
+  ).then(function(){
+
+      const popup = document.getElementById("emailSuccessPopup");
+
+      popup.classList.remove("hidden");
+      popup.classList.add("flex");
+
+      form.reset();
+
+  }, function(error){
+
+      console.error(error);
+      alert("Failed to send enquiry.");
+
+  });
+
+});
+function closeSuccessPopup(){
+  document.getElementById("emailSuccessPopup").classList.add("hidden");
+}
+
+</script>
+<script>
+
+function openEnquiry(product){
+
+  document.getElementById("productName").value = product;
+
+  const popup = document.getElementById("enquiryPopup");
+
+  popup.classList.remove("hidden");
+  popup.classList.add("flex");
+
+}
+
+function closeEnquiry(){
+
+  const popup = document.getElementById("enquiryPopup");
+
+  document.getElementById("enquiryPopup").classList.add("hidden");
+
+popup.classList.remove("hidden");
+popup.classList.add("flex");
+}
+
+function closeSuccessPopup(){
+
+  const popup = document.getElementById("emailSuccessPopup");
+
+  popup.classList.remove("flex");
+  popup.classList.add("hidden");
+
+}
+
+</script>
+</html>
+
+
+
+      
+      
